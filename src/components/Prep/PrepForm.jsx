@@ -127,7 +127,7 @@ const PrepForm = () => {
     };
 
     try {
-      const response = await fetch('http://localhost:5000/api/prep', {
+      const response = await fetch('https://alfred-backend-jmf7.onrender.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
@@ -175,7 +175,7 @@ const PrepForm = () => {
     setLoadingReply(true);
 
     try {
-      const response = await fetch('http://localhost:5000/api/campaign/ask-alfred', {
+      const response = await fetch('https://alfred-backend-jmf7.onrender.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: askText }),

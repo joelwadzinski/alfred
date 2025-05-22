@@ -117,7 +117,7 @@ const IndustryExpertise = () => {
     setLoading(true);
 
     try {
-      const response = await fetch('http://localhost:5000/api/industry-insights', {
+      const response = await fetch('https://alfred-backend-jmf7.onrender.com/api/industry-insights', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ messageHistory: newHistory }),
@@ -145,7 +145,7 @@ const IndustryExpertise = () => {
     setLoading(true);
 
     try {
-      const response = await fetch('http://localhost:5000/api/industry-insights', {
+      const response = await fetch('https://alfred-backend-jmf7.onrender.com/api/industry-insights', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ messageHistory: newHistory }),
